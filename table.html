@@ -1,77 +1,43 @@
-<!doctype html> 
-<html> 
-<head></head> 
-<style> 
-header 
-{ 
-background:teal; 
-width:40%; 
-text-align:center; 
-margin:auto; 
-font-size:20px; 
-color:white; 
-} 
-#container 
-{ 
-width:80%; 
-margin:auto; 
-} 
 
-#container table 
-{ 
-width:100%; 
-cursor:pointer; 
-} 
-#container table th 
-{ 
-text-align:center; 
-transition:1.50s; 
-} 
-td:hover 
-{ 
-background:white; 
-} 
-tr:hover 
-{
-background:orange; 
-} 
-</style> 
-<body> 
-<header> 
-<h1>Table in HTML </h1> 
-</header>
-<div id="container"> 
-<table border="1" bgcolor="gray" cellpadding="3" cellspacing="1"> 
-<caption>Marks List </caption> 
-<tr bgColor="black"> 
-<th colspan = "6"> 
-Modern school 
-</th> 
-</tr> 
-<tr> 
-<th>Roll No </th> <th>Name</th> <th>Math</th> <th>English</th> <th>Science </th> <th>Computer </th> 
-</tr> 
-<tr> 
-<td>26215441</td><td>BHAVISYA</td><td>56</td><td>78</td><td>49</td><td>65</td 
-</tr>  
-<tr> 
-<td>26215442</td><td>SUNIL</td><td>56</td><td>38</td><td>89</td><td>65</td> 
-</tr> 
-<tr> 
-<td>26215443</td><td>SAKSHI</td><td>56</td><td>48</td><td>49</td><td>88</td> 
-</tr> 
-<tr> 
-<td>26215444</td><td>AISHA</td><td>56</td><td>78</td><td>49</td><td>45</td> 
-</tr> 
-<tr> 
-<td>26215445</td><td>RAM</td><td>56</td><td>78</td><td>89</td><td>45</td> 
-</tr> 
-<tr> 
-<td>26215446</td><td>SITA</td><td>56</td><td>78</td><td>89</td><td>45</td> 
-</tr> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+
+    background-image:url(images/bhav.jpg); 
+    background-size:cover;
+     text-align:center;
+     margin-top:12%;
+    
+
+  }
+
+  
 
 
-</table>
-</div>
+</style>
+<body>
+    <script>
+var n = prompt("Enter a number...to Create Table","2")
+   for (var i =1;i<=10;i++)
+   {
+      document.write("<h1>"+n+" * "+i+" = "+n*i+"</h1>")
+   }
+    document.write("End Loop here")
+
+
+   
+
+
+
+
+
+
+    </script>
 </body>
 </html>
