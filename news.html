@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+</head>
+<style>
+   #newstoday
+   {
+    background:black;
+    color:white;
+    font-size:40px;
+    padding:20px;
+    text-align:center;
+   }
+
+   body
+   {background:;}
+
+</style>
+<body>
+    <div id="newstoday">
+        News 
+    </div>
+    <script>
+
+      var n = document.getElementById("newstoday")
+      var news = ["India skewers Pak over its Waqf remark, points to abysmal record on minorities:","ED charges Sonia, Rahul Gandhi in National Herald case","India, China close to understanding on Kailash Mansarovar Yatra","Tamil Nadu forms panel to 'protect rights of states",]  
+      n.innerHTML = news[1]
+
+      var c = 0
+      function change_news ()
+      {
+        if(c<news.length-1)
+          { c++}
+
+          else
+          { c = 0}
+          n.innerHTML = news[c]
+          document.title = c 
+
+      }
+
+      setInterval ("change_news()",3000)
+      
+
+    </script>
+</body>
+</html>
