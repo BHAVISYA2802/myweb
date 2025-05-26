@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.shuffle.min.js"></script>
+    <style>
+        #myslider {
+            width: 70%;
+            margin: auto;
+            box-shadow: 10px 10px 10px gray;
+        }
+        .pic {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Trial</h1>
+    <div id="myslider" class="cycle-slideshow" data-cycle-fx="shuffle" data-cycle-timeout="2000">
+        <img src="images/pf2.jpg" class="pic">
+        <img src="images/pf3.jpg" class="pic">
+        <img src="images/pf4.jpg" class="pic">
+        <img src="images/pf5.jpeg" class="pic">
+        <img src="images/pf6.jpg" class="pic">
+    </div>    
+</body>
+</html>
